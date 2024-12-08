@@ -1543,6 +1543,7 @@ class CaseSchema(ma.SQLAlchemyAutoSchema):
     close_datetime: Optional[datetime.datetime] = auto_field('close_datetime', required=False)
     classification_id: Optional[int] = auto_field('classification_id', required=False, allow_none=True)
     reviewer_id: Optional[int] = auto_field('reviewer_id', required=False, allow_none=True)
+    severity_id: Optional[int] = auto_field('severity_id', required=False, allow_none=True)
 
     class Meta:
         model = Cases
